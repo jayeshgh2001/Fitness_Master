@@ -1,0 +1,142 @@
+.class{
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.class-image{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.img_1{
+    width: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.img_2{
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 350px;
+    left: 40px;
+}
+
+.class-text{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.class-text p{
+    padding: 15px 0 50px;
+}
+
+@media screen and (max-width:1150px) {
+    .class{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .class-image{
+        width: 100%;
+        height:90vh;
+        position: relative;
+    }
+
+    .img_1{
+        width: 600px;
+        left: 40%;
+        top: 0;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .img_2{
+        width: 350px;
+        top: 250px;
+        left: 70px;
+    }
+
+    .class-text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .class-text .btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:950px){
+    .class-image{
+        width: 100%;
+        height:90vh;
+        position: relative;
+    }
+
+    .img_1{
+        width: 500px;
+        left: 25%;
+        top: 0;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .img_2{
+        width: 300px;
+        top: 250px;
+        left: 70px;
+    }
+}@media screen and (max-width:750px){
+    .class-image{
+        width: 100%;
+        height:90vh;
+        position: relative;
+    }
+
+    .img_1{
+        width: 450px;
+        left: 25%;
+        top: 0;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .img_2{
+        width: 300px;
+        top: 250px;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width:555px){
+    .class-image{
+        width: 100%;
+        height:90vh;
+        position: relative;
+    }
+
+    .img_1{
+        width: 430px;
+        height: 240px;
+        position: absolute;
+        left: 25px;
+    }
+
+    .img_2{
+        width: 350px;
+        object-fit: cover;
+        top: 270px;
+        left: 25px;
+    }
+}

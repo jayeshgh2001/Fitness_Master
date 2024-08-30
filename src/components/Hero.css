@@ -1,0 +1,118 @@
+.hero{
+    z-index: 1;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h4{
+    color:var(--secondary-color-dark);
+    padding-bottom: 15px;
+}
+
+.hero-text h1{
+    font-size: 5rem;
+    color: var(--white);
+    line-height: 100px;
+    padding-bottom: 15px;
+}
+
+.hero-text span{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.hero-text .btn{
+    margin-top: 40px;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.hero-image img{
+   height: 550px;
+   object-fit: cover;
+   z-index: 1;
+}
+
+.box{
+    color: rgba(190, 134, 38, 0.3);
+    width:350px;
+    height: 360px;
+    border: 45px solid rgba(190, 134, 38, 0.3);
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;  
+}
+
+.text{
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--primary-color-light);
+    font-size: 10rem;
+    font-weight: 700;
+    top: 400px;
+    right: 300px;
+}
+
+@media screen and (max-width:990px){
+    .hero{
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+        position: relative;
+        padding: 0;
+    }
+
+    .hero .text{   
+        position: absolute;
+        width: 100%;
+        left: 65%;
+        top: 350px;
+        transform: translate(-50%);
+    }
+
+    .hero-text{
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .hero-text h1{
+        font-size: 4rem;
+        line-height: 80px;
+    }
+
+    .hero-text .btn{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:555px){
+    .hero .text{
+        left: 45%;
+    }
+
+    .hero-text h1{
+        line-height: 70px;
+    }
+}

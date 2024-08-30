@@ -1,0 +1,108 @@
+.programs{
+    max-width:1200px;
+    margin: 100px auto 0;
+    padding: 0 20px;
+}
+
+.program-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program-top .arrows{
+    display: flex;
+    gap: 30px;
+}
+
+.program-top i{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    color:#fff;
+    transition: 0.3s ease-in-out;
+}
+
+.program-top i:hover{
+    color: #f9ac54;
+    border: 2px solid #f9ac54;
+}
+
+.programs-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.p-card{
+  width: 24%;
+  border: 2px solid #1f2125;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1f2125;
+  transition: all 0.3s ease-in-out;
+}
+
+.p-card .c-logo i{
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d79447;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-card h3{
+    padding: 20px 0 10px;
+}
+
+.p-card p{
+    padding: 0 0 15px;
+}
+
+.p-card:hover{
+    background-color: #35373b;
+    border: 2px solid #d79447;
+}
+
+@media screen and (max-width:990px) {
+    .programs{
+        padding: 0 30px;
+        margin: 30px 0;
+    }
+
+    .p-card{
+        width: 49%;
+        height: 258px;
+        margin-bottom: 20px;
+    } 
+}
+
+@media screen and (max-width:555px){
+    .program-top{
+        flex-direction: column;
+    }
+
+    .program-top h2{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .p-card{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    } 
+} 
